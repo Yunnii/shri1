@@ -2,7 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
     <title>JavaScript Enlightenment</title>
 </head>
 <body>
@@ -21,7 +24,7 @@
         <p>You will probably curse me for repeating myself and for being so comprehensive with my code
             examples. And while I might deserve it, I prefer to err on the side of being exact, verbose, and
             repetitive, rather than make false assumptions authors often make about their reader. Yes, both can be
-            annoying, depending upon what knowledge you bring to the subject, but they can also serve a useful
+            annoying, depending upon what knowledge you briz e ng to the subject, but they can also serve a useful
             purpose for those who want to learn a subject in detail.</p>
 
         <h2>Color-coding Conventions</h2>
@@ -31,22 +34,21 @@
             shown below).</p>
 
         <div class="separator separator-top"></div>
+        <pre><code>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;body&gt;&lt;script&gt;</code>
+        <span class="break"></span>
+<code class="comment">// this is a comment about a specific part of the code</code>
+<code>var foo = </code><code class="command">'calling out this part of the code';</code>
 
-        <div class="code variable">&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;body&gt;&lt;script&gt;</div>
-        <div class="page_number">13</div>
-    </div>
-    <div class="page">
-        <div class="code comment">// this is a comment about a specific part of the code</div>
-        <span class="code variable">var foo = </span><span class="code command">'calling out this part of the code';</span>
-        <div class="code variable">&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</div>
+<code>&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code>
+        </pre>
         <div class="separator separator-bottom"></div>
 
         <p>In addition to code examples being color-coded, the text in this book is colored so as to denote
             JavaScript words/keywords v.s. JavaScript code v.s. regular text. Below, I take an excerpt from the
             book to demonstrate this coloring semantic.</p>
 
-        <p>"Consider that the cody object created from the <span class="command">Object()</span> constructor function (i.e <span class="command">var cody = new
-            Object()</span>) is not really different from a string object created via the <span class="command">String()</span> constructor function. To
+        <p>"Consider that the cody object created from the <code class="command">Object()</code> constructor function (i.e <code class="command">var cody = new
+            Object()</code>) is not really different from a string object created via the <span class="command">String()</span> constructor function. To
             drive this fact home, examine the code below:"</p>
 
         <p>Notice the use of gray italic text for code references, orange text for JavaScript words/keywords, and
@@ -66,7 +68,6 @@
             using a browser with a built in JavaScript console I would suggest  <a href="http://browsehappy.com/">upgrading or switching browsers.</a></p>
         <p>When JS Bin is used, keep in mind that the code has to be executed manually (clicking 'Render') which
             differs from the page load execution done by jsFiddle.</p>
-        <div class="page_number">14</div>
     </div>
 </body>
 </html>

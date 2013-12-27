@@ -1,9 +1,9 @@
 body
 {
-    font-family: 'textbook', Arial, sans-serif;
-    font-size: 14px;
+    font-family: sans-serif, Arial;
+    font-size: 62.5%;
 
-    width: 770px;
+    width: 900px;
     margin: 20px auto;
 
     background: #37454F;
@@ -11,9 +11,10 @@ body
 
 .page
 {
+    font-size: 1.7em;
+
     position: relative;
 
-    height: 870px;
     margin-bottom: 30px;
     padding: 55px 70px;
 
@@ -23,8 +24,8 @@ body
 
 h1
 {
-    font-family: Arial;
-    font-size: 30px;
+    font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif;
+    font-size: 2.4em;
     font-weight: normal;
 
     margin-bottom: 100px;
@@ -38,13 +39,32 @@ h1
 
 h2
 {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: bold;
 
     margin: 52px 0 18px 0;
     padding-bottom: 10px;
 
     color: #232e44;
     border-bottom: 2px solid #ececec;
+}
+
+p
+{
+    line-height: 1.8em;
+
+    margin: 25px 0;
+}
+
+pre
+{
+    font-family: Verdana, 'Courier New';
+    font-size: 0.8em;
+    line-height: 1.5em;
+
+    margin-left: 10px;
+
+    color: darkgreen;
 }
 
 .separator-top
@@ -56,7 +76,7 @@ h2
 .separator-bottom
 {
     height: 3px;
-    margin: 10px 0 0 0;
+    margin: 10px 0 20px 0;
 }
 
 .separator
@@ -74,29 +94,6 @@ h2
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff0b5', endColorstr='#ffe268',GradientType=0 ); /* IE6-8 */
 }
 
-p
-{
-    font-size: 0.95em;
-    line-height: 1.7em;
-}
-
-.code
-{
-    font-size: 0.7em;
-    font-weight: bold;
-
-    letter-spacing: 1px;
-}
-
-.variable
-{
-    font-weight: bold;
-
-    margin-top: 10px;
-
-    color: darkgreen;
-}
-
 .command
 {
     color: #b6613f;
@@ -107,16 +104,7 @@ p
     color: grey;
 }
 
-.page_number
-{
-    font-size: 0.85em;
-
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-}
-
-a:link, a:visited
+a, a:visited
 {
     color: #0054a6;
 }
@@ -124,28 +112,4 @@ a:link, a:visited
 a:hover, a:active
 {
     color: red !important;
-}
-
-
-@media print
-{
-
-    a[href^=http]:after
-    {
-        content:" [" attr(href) "]";
-    }
-
-    .page
-    {
-        height: 900px;
-
-        border: 0;
-    }
-
-    .page_number
-    {
-        position: absolute;
-        bottom: -50px;
-        left: 50%;
-    }
 }
